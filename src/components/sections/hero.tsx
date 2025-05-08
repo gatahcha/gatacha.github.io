@@ -123,7 +123,7 @@ export default function HeroSection() {
             duration-300
           ">
             <Image
-              src="/images/profile2.jpeg"  // Update with your actual profile image path
+              src="./images/profile2.jpeg"  // Update with your actual profile image path
               alt="Charisma Rusdiyanto"
               width={320}
               height={320}
