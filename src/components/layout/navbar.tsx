@@ -2,13 +2,13 @@ import Link from "next/link";
 
 
 interface NavItem{
-    label : String,
-    href : String,
+    label : string,
+    href : string,
 }
 
 export default function Navbar(){
 
-    const NavItems : NavItem[] = [
+    const navItems : NavItem[] = [
         {label : "Blog", href : "\blog" },
         {label : "Project", href : "\project" },
         {label : "Contact", href : "\contact" },
@@ -31,7 +31,7 @@ export default function Navbar(){
 
                 {/* skills, project, and contact */}
                 <div className="flex space-x-6">
-                    {NavItems.map((item) => (
+                    {navItems.map((item) => (
                         <Link
                         key={item.href}
                         href={item.href}
@@ -40,6 +40,12 @@ export default function Navbar(){
                             {item.label}
                         </Link>
                     ))}
+                </div>
+
+                {/* github and resume */}
+                <div className="flex space-x-6">
+                    {/* github */}
+                    
                 </div>
             </div>
         </nav>
