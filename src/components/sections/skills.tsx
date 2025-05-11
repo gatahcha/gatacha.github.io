@@ -13,7 +13,7 @@ interface SkillItem {
 export default function Skills() {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [ showAll, setShowAll_ ] = useState(false);
+    //const [ showAll, setShowAll_ ] = useState(false);
   
     const skillItems : SkillItem[] = [
         { "name": "Next.js", "icon": "./icons/nextjs.svg" },
@@ -40,7 +40,7 @@ export default function Skills() {
         { "name": "MATLAB", "icon": "./icons/matlab.svg" }
     ]
 
-    const displayedSkills = showAll ? skillItems : skillItems;
+    const displayedSkills = skillItems; // showAll ? skillItems : skillItems;
 
     return(
         <section className="w-full py-12 bg-[#121C30] ">
