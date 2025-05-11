@@ -13,7 +13,7 @@ interface SkillItem {
 export default function Skills() {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [ showAll, setShowAll ] = useState(false);
+    const [ showAll, setShowAll_ ] = useState(false);
   
     const skillItems : SkillItem[] = [
         { "name": "Next.js", "icon": "./icons/nextjs.svg" },
