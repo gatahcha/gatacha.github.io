@@ -12,7 +12,6 @@ interface SkillItem {
 
 export default function Skills() {
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     //const [ showAll, setShowAll_ ] = useState(false);
   
     const skillItems : SkillItem[] = [
