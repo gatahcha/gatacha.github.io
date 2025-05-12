@@ -1,0 +1,33 @@
+{
+    "programmingLanguages": [
+      { "name": "Python", "icon": "./public/icons/python.svg" },
+      { "name": "TypeScript", "icon": "./public/icons/typescript.svg" },
+      { "name": "Java", "icon": "./public/icons/java.svg" },
+      { "name": "R", "icon": "./public/icons/r.svg" },
+      { "name": "C", "icon": "./public/icons/c.svg" },
+      { "name": "C++", "icon": "./public/icons/c++.svg" },
+      { "name": "Dart", "icon": "./public/icons/dart.svg" }
+    ],
+    "webTechnologies": [
+      { "name": "React", "icon": "./public/icons/react.svg" },
+      { "name": "Next.js", "icon": "./public/icons/nextjs.svg" },
+      { "name": "HTML", "icon": "./public/icons/html.svg" },
+      { "name": "CSS", "icon": "./public/icons/css.svg" }
+    ],
+    "backendTechnologies": [
+      { "name": "Node.js", "icon": "./public/icons/nodejs.svg" },
+      { "name": "MongoDB", "icon": "./public/icons/mongodb.svg" },
+      { "name": "Firebase", "icon": "./public/icons/firebase.svg" },
+      { "name": "SQLite", "icon": "./public/icons/sqlite.svg" }
+    ],
+    "cloudAndDevOps": [
+      { "name": "AWS", "icon": "./public/icons/aws.svg" },
+      { "name": "Google Cloud", "icon": "./public/icons/google_cloud.svg" }
+    ],
+    "mobileDevelopment": [
+      { "name": "Flutter", "icon": "./public/icons/flutter.svg" }
+    ],
+    "otherTools": [
+      { "name": "MATLAB", "icon": "./public/icons/matlab.svg" }
+    ]
+  }
