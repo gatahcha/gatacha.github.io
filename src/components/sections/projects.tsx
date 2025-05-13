@@ -16,7 +16,7 @@ export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "RoboRacer-AI",
+      title: "F1tenth Racing - Autonomous Racing Car",
       description: "Developed an autonomous racing robot using computer vision and machine learning algorithms to navigate a complex track. Implemented path planning, obstacle detection, and real-time decision-making systems.",
       technologies: ["Python", "C++", "TensorFlow", "ROS", "OpenCV", "sensor fusion"],
       period: "January 2025 – April 2025",
@@ -29,7 +29,7 @@ export default function Projects() {
       description: "Developed a modern web application for efficient academic planning with degree visualization, prerequisite tracking, and course scheduling. Implemented AI-Assistant to automate process and reduce complexity.",
       technologies: ["Vercell", "Next.JS", "React", "TypeScript", "Jira", "UI-Systematic approach"],
       period: "January 2025 – April 2025",
-      // github: "https://github.com/gatahcha/course-planner",
+      github: "https://github.com/gatahcha/course-planning-workspace",
       // demo: "https://course-planner-demo.vercel.app",
       image: "./images/AI-course_assistant.jpeg"
     },
@@ -39,7 +39,7 @@ export default function Projects() {
       description: "Implemented and enhanced a deep learning model for high-quality image generation using conditional PixelCNN++. Optimized model performance for real-time generation and reached 80% of accuracy.",
       technologies: ["Python", "PyTorch", "Cuda", "Kaggle", "Applied mathematics", "data visualization"],
       period: "January 2025 – April 2025",
-      // github: "https://github.com/gatahcha/pixelcnn",
+      github: "https://github.com/gatahcha/CPEN455HW-2024W2-project",
       image: "./images/Conditional_pixelcnn++.png"
     },
     {

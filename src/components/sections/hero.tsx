@@ -85,7 +85,7 @@ export default function Hero() {
                         duration-500
                         ">
                             <Image
-                                src="./images/profile2.jpeg"
+                                src="./images/profile.jpeg"
                                 alt="Charisma Rusdiyanto"
                                 width={320}
                                 height={320}
