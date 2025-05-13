@@ -57,7 +57,7 @@ export default function Navbar(){
 
                         {/* resume button */}
                         <Link
-                        href={"/resume.pdf"}
+                        href={"./pdffiles/charisma_cv.pdf"}
                         target="_blank"
                         className="
                         px-4 py-2
