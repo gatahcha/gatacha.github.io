@@ -10,9 +10,9 @@ interface NavItem{
 export default function Navbar(){
 
     const navItems : NavItem[] = [
-        {label : "Blog", href : "/blog" },
-        {label : "Project", href : "/project" },
-        {label : "Contact", href : "/contact" },
+        {label : "Skills", href : "#skills" },
+        {label : "Project", href : "#projects" },
+        {label : "Contact", href : "#contact" },
     ]
 
     return(
@@ -57,7 +57,7 @@ export default function Navbar(){
 
                         {/* resume button */}
                         <Link
-                        href={"./pdffiles/charisma_cv.pdf"}
+                        href={"./pdffiles/Charisma_CV_Software_Engineer.pdf"}
                         target="_blank"
                         className="
                         px-4 py-2

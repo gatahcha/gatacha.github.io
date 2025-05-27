@@ -3,14 +3,22 @@ import Hero from "@/components/sections/hero";
 import Projects from "@/components/sections/projects";
 import Skills from "@/components/sections/skills";
 
-
-export default function  Home() {
+export default function Home() {
   return (
     <>
       <Hero />
-      <Skills />
-      <Projects />
-      <Contact />
+      
+      <section id="skills">        {/* ← ADD THIS ID */}
+        <Skills />
+      </section>
+      
+      <section id="projects">      {/* ← ADD THIS ID */}
+        <Projects />
+      </section>
+      
+      <section id="contact">       {/* ← ADD THIS ID */}
+        <Contact />
+      </section>
     </>
   );
 }
