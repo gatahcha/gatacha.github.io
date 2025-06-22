@@ -4,7 +4,7 @@ import Navbar from "@/components/layout/navbar";
 
 export const metadata: Metadata = {
   title: "Charisma Rusdiyanto",
-  description: "Charisma Rusdiyanto personal website",
+  description: "Charisma Rusdiyanto Personal Website",
 };
 
 export default function RootLayout({
