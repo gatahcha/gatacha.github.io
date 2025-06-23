@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 interface NavItem {
     label: string,
-    target: string, // Changed from href to target (the section ID)
+    target: string,
 }
 
 export default function Navbar() {
@@ -27,59 +28,98 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0F172A] bg-opacity-70 backdrop-blur-md">
-            {/* logo / Name */}
-            <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <nav className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
+            {/* Dynamic Island Container */}
+            <div className="
+                px-6 py-3
+                bg-[#0F172A]/80 
+                backdrop-blur-xl 
+                border border-[#10E8CC]/20
+                rounded-full
+                shadow-2xl
+                shadow-[#10E8CC]/10
+                hover:shadow-[#10E8CC]/20
+                transition-all duration-300
+                hover:scale-[1.02]
+                flex items-center space-x-6
+                min-w-fit
+            ">
+                {/* Logo */}
                 <Link
                     href='/'
-                    className="text-xl font-bold text-[#10E8CC] hover:text-opacity-80 transition-colors">
-                    Charisma Rusdiyanto
+                    className="relative w-8 h-8 hover:scale-110 transition-transform duration-200">
+                    <Image 
+                        alt="Logo"
+                        src="./logo/logo.jpg"
+                        fill={true}
+                        className="object-cover rounded-full border border-[#10E8CC]/30" 
+                    />
                 </Link>
 
-                {/* menu and links */}
-                <div className="flex items-center space-x-6">
-                    {/* skills, project, and contact */}
-                    <div className="flex space-x-6">
-                        {navItems.map((item) => (
-                            <button
-                                key={item.target}
-                                onClick={() => handleScroll(item.target)}
-                                className="text-gray-300 hover:text-[#10E8CC] transition-colors cursor-pointer"
-                            >
-                                {item.label}
-                            </button>
-                        ))}
-                    </div>
-
-                    {/* github and resume */}
-                    <div className="flex space-x-6 justify-center items-center">
-                        {/* github icon */}
-                        <Link
-                            href="https://github.com/gatahcha"
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            className="text-gray-300 hover:text-[#10E8CC] transition-colors duration-200"
-                        >
-                            <FaGithub className="w-6 h-6" />
-                        </Link>
-
-                        {/* resume button */}
-                        <Link
-                            href={"./pdffiles/Charisma_CV_Software_Engineer.pdf"}
-                            target="_blank"
+                {/* Navigation Links */}
+                <div className="flex space-x-4">
+                    {navItems.map((item) => (
+                        <button
+                            key={item.target}
+                            onClick={() => handleScroll(item.target)}
                             className="
+                                text-gray-300 
+                                hover:text-[#10E8CC] 
+                                transition-all duration-200
+                                px-3 py-1.5
+                                rounded-full
+                                hover:bg-[#10E8CC]/10
+                                text-sm font-medium
+                                whitespace-nowrap
+                            "
+                        >
+                            {item.label}
+                        </button>
+                    ))}
+                </div>
+
+                {/* Divider */}
+                <div className="w-px h-6 bg-gradient-to-b from-transparent via-[#10E8CC]/30 to-transparent"></div>
+
+                {/* Action Items */}
+                <div className="flex items-center space-x-3">
+                    {/* GitHub Icon */}
+                    <Link
+                        href="https://github.com/gatahcha"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        className="
+                            text-gray-300 
+                            hover:text-[#10E8CC] 
+                            transition-all duration-200
+                            hover:scale-110
+                            p-2
+                            rounded-full
+                            hover:bg-[#10E8CC]/10
+                        "
+                    >
+                        <FaGithub className="w-4 h-4" />
+                    </Link>
+
+                    {/* Resume Button */}
+                    <Link
+                        href="./pdffiles/Charisma_CV_Software_Engineer.pdf"
+                        target="_blank"
+                        className="
                             px-4 py-2
-                            bg-[#10E8CC]
-                            rounded-md
+                            bg-gradient-to-r from-[#10E8CC] to-[#0EA5E9]
+                            rounded-full
                             text-black
-                            hover:bg-opacity-80
-                            transition-colors
                             text-sm
-                            font-medium
-                            ">
-                            My Resume
-                        </Link>
-                    </div>
+                            font-semibold
+                            hover:shadow-lg
+                            hover:shadow-[#10E8CC]/30
+                            transition-all duration-200
+                            hover:scale-105
+                            whitespace-nowrap
+                        ">
+                        Resume
+                    </Link>
                 </div>
             </div>
         </nav>
