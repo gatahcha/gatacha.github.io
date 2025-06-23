@@ -1,33 +1,33 @@
 {
     "programmingLanguages": [
-      { "name": "Python", "icon": "./public/icons/python.svg" },
-      { "name": "TypeScript", "icon": "./public/icons/typescript.svg" },
-      { "name": "Java", "icon": "./public/icons/java.svg" },
-      { "name": "R", "icon": "./public/icons/r.svg" },
-      { "name": "C", "icon": "./public/icons/c.svg" },
-      { "name": "C++", "icon": "./public/icons/c++.svg" },
-      { "name": "Dart", "icon": "./public/icons/dart.svg" }
+      { "name": "Python", "icon": "./icons/python.svg" },
+      { "name": "TypeScript", "icon": "./icons/typescript.svg" },
+      { "name": "Java", "icon": "./icons/java.svg" },
+      { "name": "R", "icon": "./icons/r.svg" },
+      { "name": "C", "icon": "./icons/c.svg" },
+      { "name": "C++", "icon": "./icons/c++.svg" },
+      { "name": "Dart", "icon": "./icons/dart.svg" }
     ],
     "webTechnologies": [
-      { "name": "React", "icon": "./public/icons/react.svg" },
-      { "name": "Next.js", "icon": "./public/icons/nextjs.svg" },
-      { "name": "HTML", "icon": "./public/icons/html.svg" },
-      { "name": "CSS", "icon": "./public/icons/css.svg" }
+      { "name": "React", "icon": "./icons/react.svg" },
+      { "name": "Next.js", "icon": "./icons/nextjs.svg" },
+      { "name": "HTML", "icon": "./icons/html.svg" },
+      { "name": "CSS", "icon": "./icons/css.svg" }
     ],
     "backendTechnologies": [
-      { "name": "Node.js", "icon": "./public/icons/nodejs.svg" },
-      { "name": "MongoDB", "icon": "./public/icons/mongodb.svg" },
-      { "name": "Firebase", "icon": "./public/icons/firebase.svg" },
-      { "name": "SQLite", "icon": "./public/icons/sqlite.svg" }
+      { "name": "Node.js", "icon": "./icons/nodejs.svg" },
+      { "name": "MongoDB", "icon": "./icons/mongodb.svg" },
+      { "name": "Firebase", "icon": "./icons/firebase.svg" },
+      { "name": "SQLite", "icon": "./icons/sqlite.svg" }
     ],
     "cloudAndDevOps": [
-      { "name": "AWS", "icon": "./public/icons/aws.svg" },
-      { "name": "Google Cloud", "icon": "./public/icons/google_cloud.svg" }
+      { "name": "AWS", "icon": "./icons/aws.svg" },
+      { "name": "Google Cloud", "icon": "./icons/google_cloud.svg" }
     ],
     "mobileDevelopment": [
-      { "name": "Flutter", "icon": "./public/icons/flutter.svg" }
+      { "name": "Flutter", "icon": "./icons/flutter.svg" }
     ],
     "otherTools": [
-      { "name": "MATLAB", "icon": "./public/icons/matlab.svg" }
+      { "name": "MATLAB", "icon": "./icons/matlab.svg" }
     ]
   }
