@@ -6,7 +6,9 @@ import Skills from "@/components/sections/skills";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <section id="hero">  {/* ← ADD THIS ID */}
+        <Hero />
+      </section>
       
       <section id="skills">        {/* ← ADD THIS ID */}
         <Skills />
