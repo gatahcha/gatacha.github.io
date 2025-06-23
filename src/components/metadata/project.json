@@ -5,7 +5,7 @@
             "title": "Readmap-AI",
             "description": "AI-powered book mentor that builds personalized learning roadmaps based on user interests, goals, and current knowledge level. Features interactive chatbot interface and structured book recommendations with progression logic.",
             "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "MongoDB Atlas", "Python", "Vertex AI", "Google Cloud", "Cloud Run"],
-            "period": "2024 – 2025",
+            "period": "June 2025",
             "github": "https://github.com/gatahcha/readmap-ai",
             "image": "./images/readmap-ai.png"
         },
@@ -14,7 +14,7 @@
             "title": "MCP-DOCX",
             "description": "FastMCP-powered microserver that allows users to generate well-formatted .docx documents programmatically with consistent style guide. Supports automated document creation, formatting, and citation management.",
             "technologies": ["Python", "FastMCP", "Document automation", "API development"],
-            "period": "2024 – 2025",
+            "period": "June 2025",
             "github": "https://github.com/gatahcha/MCP-DOCX",
             "image": "./images/docx-mcp.png"
         },
@@ -23,7 +23,7 @@
             "title": "Portfolio Website",
             "description": "Modern responsive portfolio website built with Next.js and React featuring dynamic island navigation, glassmorphism design, and smooth scrolling. Showcases projects, skills, and professional experience.",
             "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
-            "period": "2024 – 2025",
+            "period": "May 2025 – Now",
             "github": "https://github.com/gatahcha/gatacha.github.io",
             "image": "./images/portofolio-website.png"
         },
