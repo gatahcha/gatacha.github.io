@@ -13,7 +13,7 @@ export default function Contact() {
                         <p className="text-[#FFFFFF] font-sans text-lg">Contact</p>
                     </div>
                     <a
-                        href="mailto:your.email@example.com"
+                        href="mailto:charismaformal@gmail.com"
                         className="border-2 border-[#10E8CC] rounded-xl bg-[#343E57] py-1.5 px-3 w-fit flex justify-center items-center text-center my-3 text-[#ffffff]
                                    hover:bg-[#10E8EE] hover:text-[#343e57] hover:scale-105 hover:font-extrabold transition-all duration-500"
                     >
@@ -29,7 +29,7 @@ export default function Contact() {
                     </div>
 
                     <Link
-                        href="https://github.com/your-username"
+                        href="https://github.com/gatahcha"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border-2 border-[#10E8CC] rounded-xl bg-[#343E57] py-1.5 px-3 w-fit flex justify-center items-center text-center my-3 text-[#ffffff]
@@ -40,7 +40,7 @@ export default function Contact() {
                     </Link>
 
                     <Link
-                        href="https://linkedin.com/in/your-username"
+                        href="https://www.linkedin.com/in/charisma-pramudya-286ab3230/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="border-2 border-[#10E8CC] rounded-xl bg-[#343E57] py-1.5 px-3 w-fit flex justify-center items-center text-center my-3 text-[#ffffff]
