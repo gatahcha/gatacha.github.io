@@ -2,39 +2,75 @@
 
 import SkillCard from "../ui/skillcard"
 import SkillsInfo from "@/components/metadata/skills.json"
-
+import { useState } from "react"
 
 interface SkillItem {
-    name : string,
-    icon : string,
+    name: string,
+    icon: string,
 }
 
-
 export default function Skills() {
-
-    //const [ showAll, setShowAll_ ] = useState(false);
-  
-    
-
+    const [showAll, setShowAll] = useState(false);
     const displayedSkills = SkillsInfo.skills;
+    
+    // Show limited skills for 3 lines (approximately 15 skills)
+    const visibleSkills = showAll ? displayedSkills : displayedSkills.slice(0, 15);
+    const hasMoreSkills = displayedSkills.length > 15;
 
-    return(
-        <section className="w-full py-12 bg-[#121C30] ">
+    return (
+        <section className="w-full min-h-[75vh] py-16 bg-[#0F172A] relative overflow-hidden flex flex-col justify-center">
+        
 
-            {/* Skills text */}
-            <h2 className="text-3xl font-semibold text-center text-[#10E8CC] text-primary mb-8" >Skills</h2>
+            {/* Main content container */}
+            <div className="relative z-10 max-w-6xl mx-auto px-4 flex-grow flex flex-col justify-center">
+                
+                {/* Title Section */}
+                <div className="text-center mb-16">
+                    <p className="text-gray-400 text-sm uppercase tracking-widest mb-4">MY SKILLS</p>
+                    <h2 className="text-5xl md:text-6xl font-bold">
+                        <span className="text-white">The Tech </span>
+                        <span className="bg-gradient-to-r from-[#0EA5E9] to-[#3B82F6] bg-clip-text text-transparent">
+                            ARSENAL
+                        </span>
+                    </h2>
+                </div>
 
-            {/* skill grid container with border */}
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(120px,1fr))] gap-4 rounded-3xl border-[#10E8CC] border-2 p-8 mx-auto my-4 w-[85%] bg-[#343e57]">
-                {
-                    displayedSkills.map((item) => (
-                        <SkillCard 
-                            name={item.name} 
-                            image={item.icon}
-                            key={item.name} 
-                        />
-                    ))
-                }
+                {/* Skills Flow Layout */}
+                <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto mb-8">
+                    {visibleSkills.map((skill, index) => (
+                        <div
+                            key={skill.name}
+                            className="transform transition-all duration-300 hover:scale-105"
+                        >
+                            <SkillCard name={skill.name} image={skill.icon} />
+                        </div>
+                    ))}
+                </div>
+
+                {/* See More Button */}
+                {hasMoreSkills && (
+                    <div className="text-center">
+                        <button
+                            onClick={() => setShowAll(!showAll)}
+                            className="
+                                px-6 py-3
+                                bg-gradient-to-r from-[#10E8CC] to-[#0EA5E9]
+                                text-black
+                                rounded-full
+                                font-semibold
+                                text-sm
+                                hover:shadow-lg
+                                hover:shadow-[#10E8CC]/30
+                                transition-all duration-300
+                                hover:scale-105
+                                border border-[#10E8CC]/20
+                                backdrop-blur-sm
+                            "
+                        >
+                            {showAll ? 'Show Less' : `See More (${displayedSkills.length - 15} more)`}
+                        </button>
+                    </div>
+                )}
             </div>
         </section>
     )

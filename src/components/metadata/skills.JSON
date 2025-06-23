@@ -3,6 +3,8 @@
         { "name": "Next.js", "icon": "./icons/nextjs.svg" },
         { "name": "React", "icon": "./icons/react.svg" },
         { "name": "Flutter", "icon": "./icons/flutter.svg" },
+        { "name": "MCP", "icon": "./icons/mcp.png" },
+        { "name": "Google-ADK", "icon": "./icons/google-adk.png" },
         { "name": "OpenCV", "icon": "./icons/opencv.svg" },
         { "name": "PyTorch", "icon": "./icons/pytorch.svg" },
         { "name": "TensorFlow", "icon": "./icons/tensorflow.svg" },
