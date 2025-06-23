@@ -4,10 +4,6 @@ import SkillCard from "../ui/skillcard"
 import SkillsInfo from "@/components/metadata/skills.json"
 import { useState } from "react"
 
-interface SkillItem {
-    name: string,
-    icon: string,
-}
 
 export default function Skills() {
     const [showAll, setShowAll] = useState(false);
@@ -37,7 +33,7 @@ export default function Skills() {
 
                 {/* Skills Flow Layout */}
                 <div className="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto mb-8">
-                    {visibleSkills.map((skill, index) => (
+                    {visibleSkills.map((skill) => (
                         <div
                             key={skill.name}
                             className="transform transition-all duration-300 hover:scale-105"
