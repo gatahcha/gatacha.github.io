@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         border border-gray-700
         rounded-lg
         p-6
-        hover:bg-[#242f3f]
+        hover:bg-[#334155]
         hover:border-[#10E8CC]
         transition-all
         duration-300
@@ -99,6 +99,30 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                   GitHub
                 </Link>
               )}
+
+              {project.link && (
+                <Link 
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="
+                    text-gray-300
+                    bg-[#0F172A]
+                    border border-gray-600
+                    px-4
+                    py-2
+                    rounded-md
+                    hover:bg-[#10E8CC]
+                    hover:text-[#0F172A]
+                    hover:border-[#10E8CC]
+                    transition-all
+                    duration-300
+                    font-medium
+                  "
+                >
+                  Link
+                </Link>
+              )}
               
               {project.demo && (
                 <Link 
@@ -120,7 +144,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                     font-medium
                   "
                 >
-                  Live Demo
+                  Demo
                 </Link>
               )}
             </div>

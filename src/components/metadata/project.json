@@ -7,7 +7,9 @@
             "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "ShadCN UI", "MongoDB Atlas", "Python", "Vertex AI", "Google Cloud", "Cloud Run"],
             "period": "June 2025",
             "github": "https://github.com/gatahcha/readmap-ai",
-            "image": "./images/readmap-ai.png"
+            "image": "./images/readmap-ai.png",
+            "link" : "https://readmap-ai.com/",
+            "demo" : "https://devpost.com/software/readmap-ai?ref_content=my-projects-tab&ref_feature=my_projects"
         },
         {
             "id": 2,
@@ -25,7 +27,8 @@
             "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"],
             "period": "May 2025 – Now",
             "github": "https://github.com/gatahcha/gatacha.github.io",
-            "image": "./images/portofolio-website.png"
+            "image": "./images/portofolio-website.png",
+            "link" : "https://gatahcha.dev/"
         },
         {
             "id": 4,
