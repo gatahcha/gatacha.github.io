@@ -1,33 +1,26 @@
 {
-    "programmingLanguages": [
-      { "name": "Python", "icon": "./icons/python.svg" },
-      { "name": "TypeScript", "icon": "./icons/typescript.svg" },
-      { "name": "Java", "icon": "./icons/java.svg" },
-      { "name": "R", "icon": "./icons/r.svg" },
-      { "name": "C", "icon": "./icons/c.svg" },
-      { "name": "C++", "icon": "./icons/c++.svg" },
-      { "name": "Dart", "icon": "./icons/dart.svg" }
-    ],
-    "webTechnologies": [
-      { "name": "React", "icon": "./icons/react.svg" },
-      { "name": "Next.js", "icon": "./icons/nextjs.svg" },
-      { "name": "HTML", "icon": "./icons/html.svg" },
-      { "name": "CSS", "icon": "./icons/css.svg" }
-    ],
-    "backendTechnologies": [
-      { "name": "Node.js", "icon": "./icons/nodejs.svg" },
-      { "name": "MongoDB", "icon": "./icons/mongodb.svg" },
-      { "name": "Firebase", "icon": "./icons/firebase.svg" },
-      { "name": "SQLite", "icon": "./icons/sqlite.svg" }
-    ],
-    "cloudAndDevOps": [
-      { "name": "AWS", "icon": "./icons/aws.svg" },
-      { "name": "Google Cloud", "icon": "./icons/google_cloud.svg" }
-    ],
-    "mobileDevelopment": [
-      { "name": "Flutter", "icon": "./icons/flutter.svg" }
-    ],
-    "otherTools": [
-      { "name": "MATLAB", "icon": "./icons/matlab.svg" }
+    "skills" : [
+        { "name": "Next.js", "icon": "./icons/nextjs.svg" },
+        { "name": "React", "icon": "./icons/react.svg" },
+        { "name": "Flutter", "icon": "./icons/flutter.svg" },
+        { "name": "OpenCV", "icon": "./icons/opencv.svg" },
+        { "name": "PyTorch", "icon": "./icons/pytorch.svg" },
+        { "name": "TensorFlow", "icon": "./icons/tensorflow.svg" },
+        { "name": "Firebase", "icon": "./icons/firebase.svg" },
+        { "name": "MongoDB", "icon": "./icons/mongodb.svg" },
+        { "name": "SQLite", "icon": "./icons/sqlite.svg" },
+        { "name": "Node.js", "icon": "./icons/nodejs.svg" },
+        { "name": "AWS", "icon": "./icons/aws.svg" },
+        { "name": "Google Cloud Platform", "icon": "./icons/google_cloud.svg" },
+        { "name": "Python", "icon": "./icons/python.svg" },
+        { "name": "TypeScript", "icon": "./icons/typescript.svg" },
+        { "name": "Java", "icon": "./icons/java.svg" },
+        { "name": "R", "icon": "./icons/r.svg" },
+        { "name": "C", "icon": "./icons/c.svg" },
+        { "name": "C++", "icon": "./icons/c++.svg" },
+        { "name": "Dart", "icon": "./icons/dart.svg" },
+        { "name": "HTML", "icon": "./icons/html.svg" },
+        { "name": "CSS", "icon": "./icons/css.svg" },
+        { "name": "MATLAB", "icon": "./icons/matlab.svg" }
     ]
   }

@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import ProjectInfo from "@/components/metadata/project.json"
 
 interface Project {
   id: number;
   title: string;
+  subtitle?: string;
   description: string;
   technologies: string[];
   period: string;
@@ -13,54 +15,7 @@ interface Project {
 }
 
 export default function Projects() {
-  const projects: Project[] = [
-    {
-      id: 1,
-      title: "F1tenth Racing - Autonomous Racing Car",
-      description: "Developed an autonomous racing robot using computer vision and machine learning algorithms to navigate a complex track. Implemented path planning, obstacle detection, and real-time decision-making systems.",
-      technologies: ["Python", "C++", "TensorFlow", "ROS", "OpenCV", "sensor fusion"],
-      period: "January 2025 – April 2025",
-      // github: "https://github.com/gatahcha/roboracer",
-      image: "./images/f1tenth.png"
-    },
-    {
-      id: 2,
-      title: "AI-Assistant Course Planning Workspace",
-      description: "Developed a modern web application for efficient academic planning with degree visualization, prerequisite tracking, and course scheduling. Implemented AI-Assistant to automate process and reduce complexity.",
-      technologies: ["Vercell", "Next.JS", "React", "TypeScript", "Jira", "UI-Systematic approach"],
-      period: "January 2025 – April 2025",
-      github: "https://github.com/gatahcha/course-planning-workspace",
-      // demo: "https://course-planner-demo.vercel.app",
-      image: "./images/AI-course_assistant.jpeg"
-    },
-    {
-      id: 3,
-      title: "Conditional PixelCNN++",
-      description: "Implemented and enhanced a deep learning model for high-quality image generation using conditional PixelCNN++. Optimized model performance for real-time generation and reached 80% of accuracy.",
-      technologies: ["Python", "PyTorch", "Cuda", "Kaggle", "Applied mathematics", "data visualization"],
-      period: "January 2025 – April 2025",
-      github: "https://github.com/gatahcha/CPEN455HW-2024W2-project",
-      image: "./images/Conditional_pixelcnn++.png"
-    },
-    {
-      id: 4,
-      title: "OS 161",
-      description: "Engineered virtual memory allocation, system call, and multiprocessing architecture for an MIPS-based operating system.",
-      technologies: ["Low level programming", "Data structure and algorithm", "team communication"],
-      period: "September 2024 – December 2024",
-      // github: "https://github.com/gatahcha/os161",
-      image: "./images/os161.jpeg"
-    },
-    {
-      id: 5,
-      title: "AI Chatbot Study Assistant",
-      description: "Designed an AI chatbot that uses Llama 3.2 Combined with Retrieval Augmented Generation to aid students comprehend course materials.",
-      technologies: ["Rest API", "Git", "Langchain", "ChromaDB", "MongoDB", "Javascript", "Flask", "HTML", "CSS"],
-      period: "September 2024 – December 2024",
-      // github: "https://github.com/gatahcha/study-assistant",
-      image: "./images/AI-chatbot.jpeg"
-    }
-  ];
+  const projects: Project[] = ProjectInfo.project;
 
   return (
     <section className="py-16 bg-[#343e57] px-4">
