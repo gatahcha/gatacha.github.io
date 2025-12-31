@@ -21,7 +21,7 @@ export default function Projects() {
     <section className="py-16 bg-[#0F172A] px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl text-center md:text-6xl font-bold mb-16">
-            <span className="bg-gradient-to-r from-[#0EA5E9] to-[#3B82F6] bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-[#0EA5E9] to-[#3B82F6] bg-clip-text text-transparent">
                 Projects
             </span>
         </h2>

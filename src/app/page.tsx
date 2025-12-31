@@ -18,7 +18,7 @@ export default function Home() {
         <Projects />
       </section>
       
-      <section id="contact">       {/* ← ADD THIS ID */}
+      <section id="connect">       {/* ← ADD THIS ID */}
         <Contact />
       </section>
     </>

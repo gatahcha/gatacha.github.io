@@ -25,7 +25,7 @@ export default function Skills() {
                     <p className="text-gray-400 text-sm uppercase tracking-widest mb-4">MY SKILLS</p>
                     <h2 className="text-5xl md:text-6xl font-bold">
                         <span className="text-white">The Tech </span>
-                        <span className="bg-gradient-to-r from-[#0EA5E9] to-[#3B82F6] bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-[#0EA5E9] to-[#3B82F6] bg-clip-text text-transparent">
                             ARSENAL
                         </span>
                     </h2>
@@ -50,7 +50,7 @@ export default function Skills() {
                             onClick={() => setShowAll(!showAll)}
                             className="
                                 px-6 py-3
-                                bg-gradient-to-r from-[#10E8CC] to-[#0EA5E9]
+                                bg-linear-to-r from-[#10E8CC] to-[#0EA5E9]
                                 text-black
                                 rounded-full
                                 font-semibold

@@ -21,9 +21,7 @@ interface ProjectCardProps {
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div className="group relative">
-      {/* Glowing background effect */}
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-[#10E8CC] to-[#E879F9] rounded-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
-      
+
       {/* Main card */}
       <div className="
         relative
@@ -35,8 +33,6 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         hover:border-[#10E8CC]
         transition-all
         duration-300
-        shadow-lg
-        shadow-[#E879F9]/5
         hover:shadow-[#E879F9]/15
       ">
         <div className="md:flex md:gap-6 md:items-center">

@@ -37,8 +37,8 @@ export default function Hero() {
                     </h1>
 
                     <p className="text-xl text-gray-300">
-                        Third year computer engineering student at UBC.
-                        I am interested in software development, Deep Learning, and Low-level programming.
+                        Fourth year computer engineering student at UBC.
+                        I am interested in Software Development.
                         
                     </p>
 

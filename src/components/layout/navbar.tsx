@@ -16,7 +16,7 @@ export default function Navbar() {
     const navItems: NavItem[] = [
         { label: "Skills", target: "skills" },
         { label: "Project", target: "projects" },
-        { label: "Contact", target: "contact" },
+        { label: "Connect", target: "connect" },
     ]
 
     // Function to handle smooth scrolling without changing URL
@@ -35,8 +35,6 @@ export default function Navbar() {
         <>
             {/* Desktop & Tablet Navbar */}
             <nav className="fixed top-4 sm:top-6 left-1/2 transform -translate-x-1/2 z-50 px-4 w-full max-w-fit group">
-                {/* Glowing background effect */}
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-[#10E8CC] to-[#E879F9] rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-300 blur-sm"></div>
                 
                 {/* Dynamic Island Container */}
                 <div className="
@@ -47,9 +45,6 @@ export default function Navbar() {
                     border border-gray-700
                     rounded-full
                     shadow-2xl
-                    shadow-[#E879F9]/10
-                    hover:shadow-[#E879F9]/20
-                    hover:bg-[#334155]/90
                     transition-all duration-300
                     hover:scale-[1.02]
                     flex items-center justify-center
@@ -96,17 +91,13 @@ export default function Navbar() {
                             target="_blank"
                             className="
                                 px-3 py-1.5
-                                bg-gradient-to-r from-[#10E8CC] to-[#0EA5E9]
                                 rounded-full
                                 text-black
                                 text-xs
                                 font-semibold
-                                hover:shadow-lg
-                                hover:shadow-[#10E8CC]/30
                                 transition-all duration-200
                                 hover:scale-105
                                 whitespace-nowrap
-                                flex-shrink-0
                             ">
                             CV
                         </Link>
@@ -177,7 +168,7 @@ export default function Navbar() {
                                 target="_blank"
                                 className="
                                     px-3 lg:px-4 py-1.5 lg:py-2
-                                    bg-gradient-to-r from-[#10E8CC] to-[#0EA5E9]
+                                    bg-linear-to-r from-[#10E8CC] to-[#0EA5E9]
                                     rounded-full
                                     text-black
                                     text-xs lg:text-sm
