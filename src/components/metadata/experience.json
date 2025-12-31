@@ -1,0 +1,21 @@
+{
+    "experinece": [
+        {
+            "id": 1,
+            "title": "GenAI developer - TLEF ENGE-AI PROJECT",
+            "description": "Developed a GenAI-powered educational platform to enhance engineering student comprehension using prompt engineering and retrieval-augmented generation (RAG).",
+            "technologies": ["passport.js", "Qdrant", "MongoDB", "Docker", "FireWorks", "HTML", "CSS", "TypeScript"],
+            "period": "June 2025 - Now",
+            "github": "https://github.com/ubc/tlef-engeai",
+            "image": "./images/tlef-engeai.png"
+        },
+        {
+            "id": 2,
+            "title": "Teaching Assitant - APSC 160 Vantage College",
+            "description": "Supported 50+ Vantage College students by grading assignments, leading study sessions, and providing academic and emotional support under the supervision of Dr. Saloome Motavas.",
+            "technologies": ["C Programming Language", "Arduino Uno",  "Technical Communication", "Time Management"],
+            "period": "June 2025 - Now",
+            "image": "./images/APSC-160-TA.png"
+        }
+    ]
+}

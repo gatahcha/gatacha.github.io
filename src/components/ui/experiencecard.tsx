@@ -1,24 +1,9 @@
+
 import Link from "next/link";
 import Image from "next/image";
+import {ProjectCardProps, Project} from "./projectcard";
 
-export interface Project {
-  id: number;
-  title: string;
-  subtitle?: string;
-  description: string;
-  technologies: string[];
-  period: string;
-  github?: string;
-  demo?: string;
-  image?: string;
-  link?: string;
-}
-
-export interface ProjectCardProps {
-  project: Project;
-}
-
-export default function ProjectCard({ project }: ProjectCardProps) {
+export default function ExperienceCard({ project }: ProjectCardProps) {
   return (
     <div className="group relative">
 
@@ -35,7 +20,32 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         duration-300
         hover:shadow-[#E879F9]/15
       ">
+
+
         <div className="md:flex md:gap-6 md:items-center">
+            {project.image && (
+                <div className="mt-6 md:mt-0 md:w-1/3">
+                <div className="
+                    relative 
+                    w-full 
+                    rounded-lg 
+                    overflow-hidden 
+                    shadow-lg 
+                    border border-gray-600 
+                    group-hover:border-[#10E8CC] 
+                    transition-all duration-300
+                    group-hover:shadow-[#E879F9]/20
+                " style={{ paddingTop: "55%" }}>
+                    <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:brightness-110 transition-all duration-300"
+                    />
+                </div>
+                </div>
+            )
+            }
           <div className={project.image ? "md:w-2/3" : "w-full"}>
             <div className="flex justify-between items-start mb-2">
               <h3 className="text-2xl font-bold text-white group-hover:text-gray-100 transition-colors duration-300">
@@ -146,28 +156,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             </div>
           </div>
           
-          {project.image && (
-            <div className="mt-6 md:mt-0 md:w-1/3">
-              <div className="
-                relative 
-                w-full 
-                rounded-lg 
-                overflow-hidden 
-                shadow-lg 
-                border border-gray-600 
-                group-hover:border-[#10E8CC] 
-                transition-all duration-300
-                group-hover:shadow-[#E879F9]/20
-              " style={{ paddingTop: "55%" }}>
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover group-hover:brightness-110 transition-all duration-300"
-                />
-              </div>
-            </div>
-          )}
+          
         </div>
       </div>
     </div>

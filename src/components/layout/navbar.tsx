@@ -87,7 +87,7 @@ export default function Navbar() {
 
                         {/* Resume Button (always visible on mobile) */}
                         <Link
-                            href="./pdffiles/Charisma_CV_Software_Engineer.pdf"
+                            href="./pdffiles/Charisma_CV_Computer_Engineering_Student"
                             target="_blank"
                             className="
                                 px-3 py-1.5
@@ -164,7 +164,7 @@ export default function Navbar() {
 
                             {/* Resume Button */}
                             <Link
-                                href="./pdffiles/Charisma_CV_Software_Engineer.pdf"
+                                href="./pdffiles/Charisma_CV_Computer_Engineering_Student"
                                 target="_blank"
                                 className="
                                     px-3 lg:px-4 py-1.5 lg:py-2
