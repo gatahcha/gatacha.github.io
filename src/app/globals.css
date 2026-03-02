@@ -40,6 +40,4 @@ body {
 html, body {
   /* Prevent overscroll bounce/white space */
   overscroll-behavior: none;
-  /* Prevent horizontal scrolling */
-  overflow-x: hidden;
 }
